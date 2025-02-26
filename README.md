@@ -1,6 +1,6 @@
 # Tools and recommendations for reproducible teaching
 
-Talk by [Mine Dogucu](https://www.minedogucu.com/) and Mine Çetinkaya-Rundel[https://mine-cr.com/] given at Royal Statical Society Teaching Statistics SIG event at TALMO on 2025-03-12
+Talk by [Mine Dogucu](https://www.minedogucu.com/) and [Mine Çetinkaya-Rundel](https://mine-cr.com/) given at Royal Statical Society Teaching Statistics SIG event at TALMO on 2025-03-12
 
 Slides of the talk can be accessed online at [mdogucu.github.io/talmo-25](https://mdogucu.github.io/talmo-25)
 
