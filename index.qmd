@@ -1,9 +1,9 @@
 ---
-title: "XXXXX"
-author: "Mine Dogucu <br> University of California Irvine"
-date: "XXXXX"
-subtitle: "Talk at XXXX"
-footer: "mdogucu.github.io/XXXX"
+title: "Tools and recommendations for reproducible teaching"
+author: "Mine Dogucu <br> University of California Irvine <br><br> Mine Çetinkaya-Rundel <br> Duke University"
+date: "2025-03-12"
+subtitle: "Talk at TALMO"
+footer: "mdogucu.github.io/talmo-25"
 format: 
   revealjs:
     slide-number: true
@@ -11,13 +11,113 @@ format:
     theme: ["style.scss"]
 ---
 
-## Slides
+## 
+
+[Dogucu, M., & Çetinkaya-Rundel, M. (2022). Tools and Recommendations for Reproducible Teaching. Journal of Statistics and Data Science Education, 30(3), 251–260. https://doi.org/10.1080/26939169.2022.2138645](https://www.tandfonline.com/doi/full/10.1080/26939169.2022.2138645)
+
+. . .
+
+with updated examples
+
+## Teacher-Scholar's Toolkit
+
+| Purpose  | Tool                |
+|----------|---------------------|
+| Research | R                   |
+| Teaching | PowerPoint          |
+| Learning | Graphing Calculator |
+
+
+## Teacher-Scholar's Toolkit
+
+| Purpose  | Tool                |
+|----------|---------------------|
+| Research | R                   |
+| Teaching | R          |
+| Learning | R |
+
+## Teacher-Scholar's Toolkit
+
+<style>
+    .focus tr:nth-child(2) { background: gray; }
+</style>
+
+<div class="focus">
+
+:::: {.columns}
+
+::: {.column width="50%"}
+| Purpose  | Tool                |
+|----------|---------------------|
+| Research | R                   |
+| Teaching | PowerPoint          |
+| Learning | Graphing Calculator |
+:::
+
+::: {.column width="50%"}
+| Purpose  | Tool                |
+|----------|---------------------|
+| Research | R                   |
+| Teaching | R          |
+| Learning | R |
+:::
+
+::::
+
+</div>
+
+## Why?
+
+- Course management
+- Role modeling
+- Sharing course materials with others
+
+## Framework for Reproducible Teaching
+
+All teaching materials should be
+
+- computationally reproducible,
+
+- well-documented, and
+
+- open.
+
+# Computational Reproducibility
+
+## Literate programming
+
+## Raw data
+
+## File organization
+
+## Version control
+
+# Documentation
+
+# Openness
+
+##
+
+[Dogucu, M. (In Press). Reproducibility in the Classroom. Annual Review of Statistics and Its Application.](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-112723-034436)
 
 ## QUESTIONS?
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
 `r fontawesome::fa(name = "link")`
 <a href = "http://minedogucu.com">minedogucu.com</a>  
 `r fontawesome::fa(name = "github")` <a href = "http://github.com/mdogucu">mdogucu</a>   
-`r fontawesome::fa(name = "twitter")` <a href = "http://twitter.com/MineDogucu">MineDogucu</a>  
 `r fontawesome::fa(name = "mastodon")` <a href = "https://mastodon.social/@MineDogucu">mastodon.social/@MineDogucu</a>  
-`r fontawesome::fa(name = "link")` <a href = "https://bsky.app/profile/minedogucu.bsky.social">minedogucu.bsky.social</a>  
+`r fontawesome::fa(name = "link")` <a href = "https://bsky.app/profile/minedogucu.com">bsky.app/profile/minedogucu.com</a>  
 `r fontawesome::fa(name = "linkedin")` <a href = "https://www.linkedin.com/in/minedogucu/">minedogucu</a> 
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+
