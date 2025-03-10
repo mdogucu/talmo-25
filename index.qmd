@@ -3,12 +3,12 @@ title: "Tools and recommendations for reproducible teaching"
 author: "Mine Dogucu <br> University of California Irvine <br><br> Mine Çetinkaya-Rundel <br> Duke University"
 date: "2025-03-12"
 subtitle: "Talk at TALMO"
-footer: "mdogucu.github.io/talmo-25"
+footer: "🔗 [mdogucu.github.io/talmo-25](https://mdogucu.github.io/talmo-25)"
 format: 
   revealjs:
     slide-number: true
     incremental: true
-    theme: ["style.scss"]
+    theme: style.scss
 ---
 
 ## 
@@ -106,7 +106,7 @@ All teaching materials should be
 
 :::: {.columns}
 
-::: {.column width="50%"}
+::: {.column width="57%"}
 {{< fa link >}} [minedogucu.com](https://www.minedogucu.com/)
 
 {{< fa brands github >}} [mdogucu](https://github.com/mdogucu)
@@ -118,7 +118,7 @@ All teaching materials should be
 {{< fa brands linkedin >}} [minedogucu](https://www.linkedin.com/in/minedogucu/)
 :::
 
-::: {.column width="50%"}
+::: {.column width="43%"}
 {{< fa link >}} [mine-cr.com](https://mine-cr.com)
 
 {{< fa brands github >}} [mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel) 
