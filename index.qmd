@@ -1,6 +1,8 @@
 ---
 title: "Tools and recommendations for reproducible teaching"
-author: "Mine Dogucu <br> University of California Irvine <br><br> Mine Çetinkaya-Rundel <br> Duke University"
+author: 
+  - "Mine Dogucu <br> University of California Irvine"
+  - "Mine Çetinkaya-Rundel <br> Duke University"
 date: "2025-03-12"
 subtitle: "Talk at TALMO"
 footer: "🔗 [mdogucu.github.io/talmo-25](https://mdogucu.github.io/talmo-25)"
@@ -37,10 +39,6 @@ with updated examples
 | Learning | R |
 
 ## Teacher-Scholar's Toolkit
-
-<style>
-    .focus tr:nth-child(2) { background: gray; }
-</style>
 
 <div class="focus">
 

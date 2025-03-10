@@ -78,9 +78,10 @@
 
 
 // Body
-$fontsize: 35px;
+$font-size: 35px;
 $body-bg: #d6d2c4;
 $body-color: #003b49;
+$text-muted: lighten( $body-color, 5%);
 
 // Links and actions
 $link-color: #a84d0e;
@@ -2572,6 +2573,10 @@ $presentation-author-block-padding-right: if(
   }
 }
 
+
+.focus tr:nth-child(2) { 
+  background: lightgray; 
+}
 
 .reveal .slide .note {
   border-left: 5px solid  #a84d0e;
