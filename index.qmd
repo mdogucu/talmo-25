@@ -96,7 +96,7 @@ All teaching materials should be
 
 ##
 
-[Dogucu, M. (In Press). Reproducibility in the Classroom. Annual Review of Statistics and Its Application.](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-112723-034436)
+[Dogucu, M. (2025). Reproducibility in the Classroom. Annual Review of Statistics and Its Application  2025. 12:89–105.](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-112723-034436)
 
 ## QUESTIONS?
 
