@@ -102,20 +102,32 @@ All teaching materials should be
 
 ## QUESTIONS?
 
+<br><br>
 
 :::: {.columns}
 
 ::: {.column width="50%"}
-`r fontawesome::fa(name = "link")`
-<a href = "http://minedogucu.com">minedogucu.com</a>  
-`r fontawesome::fa(name = "github")` <a href = "http://github.com/mdogucu">mdogucu</a>   
-`r fontawesome::fa(name = "mastodon")` <a href = "https://mastodon.social/@MineDogucu">mastodon.social/@MineDogucu</a>  
-`r fontawesome::fa(name = "link")` <a href = "https://bsky.app/profile/minedogucu.com">bsky.app/profile/minedogucu.com</a>  
-`r fontawesome::fa(name = "linkedin")` <a href = "https://www.linkedin.com/in/minedogucu/">minedogucu</a> 
+{{< fa link >}} [minedogucu.com](https://www.minedogucu.com/)
+
+{{< fa brands github >}} [mdogucu](https://github.com/mdogucu)
+
+{{< fa brands mastodon >}} [mastodon.social/@MineDogucu](https://mastodon.social/@MineDogucu)
+
+{{< fa brands bluesky >}} [minedogucu.com](https://bsky.app/profile/minedogucu.com)
+
+{{< fa brands linkedin >}} [minedogucu](https://www.linkedin.com/in/minedogucu/)
 :::
 
 ::: {.column width="50%"}
+{{< fa link >}} [mine-cr.com](https://mine-cr.com)
 
+{{< fa brands github >}} [mine-cetinkaya-rundel](https://github.com/mine-cetinkaya-rundel) 
+
+{{< fa brands mastodon >}} [fosstodon.org/@minecr](https://fosstodon.org/@minecr)
+
+{{< fa brands bluesky >}} [minecr.bsky.social](https://bsky.app/profile/minecr.bsky.social)
+
+{{< fa brands linkedin >}} [minec](https://www.linkedin.com/in/minec/)
 :::
 
 ::::
