@@ -118,17 +118,67 @@ include_graphics("img/exam.png")
 ```
 
 
+## Raw data - real data
 
+```{r}
+#| fig-align: center
+include_graphics("img/raw-data.png")
+```
 
+## Raw data - simulated data
 
-
-
-
-## Raw data
+```{r}
+#| echo: true
+set.seed(123)
+sample(1:100, size = 3, replace = FALSE)
+set.seed(123)
+sample(1:100, size = 3, replace = FALSE)
+set.seed(123)
+sample(1:100, size = 3, replace = FALSE)
+set.seed(123)
+sample(1:100, size = 3, replace = FALSE)
+set.seed(123)
+sample(1:100, size = 3, replace = FALSE)
+```
 
 ## File organization
 
+```{r}
+#| fig-align: center
+include_graphics("img/file-organization.jpg")
+```
+
+## File organization
+
+```{r}
+#| eval: false
+#| echo: true
+read.csv(here::here("data","bike-rental.csv"))
+```
+
 ## Version control
+
+```{r}
+#| fig-align: center
+include_graphics("img/version-control.png")
+```
+
+Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social) 
+
+## Version control
+
+```{r}
+#| fig-align: center
+#| fig-cap: Diff due to upgrading R from 3.5.3 to 4.1.0
+include_graphics("img/git-diff.jpg")
+```
+
+## Version control
+
+```{r}
+#| fig-align: center
+include_graphics("img/github-classroom.jpg")
+```
 
 # Documentation
 
