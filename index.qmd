@@ -15,6 +15,11 @@ format:
 
 ## 
 
+```{r}
+library(knitr)
+```
+
+
 [Dogucu, M., & Çetinkaya-Rundel, M. (2022). Tools and Recommendations for Reproducible Teaching. Journal of Statistics and Data Science Education, 30(3), 251–260. https://doi.org/10.1080/26939169.2022.2138645](https://www.tandfonline.com/doi/full/10.1080/26939169.2022.2138645)
 
 . . .
@@ -83,6 +88,41 @@ All teaching materials should be
 # Computational Reproducibility
 
 ## Literate programming
+
+```{r}
+#| fig-align: center
+include_graphics("img/rmarkdown.png")
+```
+
+Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social) 
+
+## Literate programming - Course websites
+
+```{r}
+#| fig-align: center
+include_graphics("img/website.png")
+```
+
+## Literate programming - Slides
+
+```{r}
+#| fig-align: center
+include_graphics("img/slides.png")
+```
+
+## Literate programming - Exams
+
+```{r}
+#| fig-align: center
+include_graphics("img/exam.png")
+```
+
+
+
+
+
+
+
 
 ## Raw data
 
