@@ -1,4 +1,4 @@
-// quarto-scss-analysis-annotation { "quarto-version": "1.6.39" }
+// quarto-scss-analysis-annotation { "quarto-version": "1.6.42" }
 
 // quarto-scss-analysis-annotation { "origin": "'use' section from format" }
 
@@ -76,13 +76,15 @@
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from user-defined SCSS" }
 
-$mainFontSize: 35px;
-$backgroundColor: #d6d2c4;
-$mainColor: #003b49;
+
+// Body
+$fontsize: 35px;
+$body-bg: #d6d2c4;
+$body-color: #003b49;
 
 // Links and actions
-$linkColor: #a84d0e;
-$linkColorHover: darken( $linkColor, 20% );
+$link-color: #a84d0e;
+$link-hover-color: darken( $link-color, 20% );
 
 
 // quarto-scss-analysis-annotation { "origin": "Defaults from Quarto's SCSS" }
@@ -2065,9 +2067,6 @@ $panel-sidebar-padding: 0.5em;
   quarto-color.blackness($backgroundColor) > $code-block-theme-dark-threshhold
 ) {
   /*! dark */
-  .reveal div.callout.callout-style-default .callout-title {
-    color: #222;
-  }
 } @else {
   /*! light */
 }
@@ -2293,15 +2292,14 @@ kbd {
       }
 
       &.callout-title {
+        display: flex;
+        align-items: center;
+
         p {
           margin-top: 0.5em;
           margin-bottom: 0.5em;
+          color: var(--r-main-color);
         }
-      }
-
-      &.callout-title {
-        display: flex;
-        align-items: center;
       }
     }
 
@@ -2583,10 +2581,6 @@ $presentation-author-block-padding-right: if(
   background:#fcece0;
 }
 
-* {
-  color:#003b49;
-}
-
 .font25{font-size:25px}
 .font50{font-size:50px}
 .font75{font-size:75px}
@@ -2598,19 +2592,5 @@ $presentation-author-block-padding-right: if(
   text-align: center;
 }
 
-.pull-left {
-  float: left;
-  width: 50%;
-}
-.pull-right {
-  float: right;
-  width: 50%;
-}
-
-.font25{font-size:25px}
-.font50{font-size:50px}
-.font75{font-size:75px}
-.font100{font-size:100px}
-.font150{font-size:150px}
 
 // quarto-scss-analysis-annotation { "origin": null }
