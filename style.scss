@@ -6,6 +6,10 @@ $body-bg: #d6d2c4;
 $body-color: #003b49;
 $text-muted: lighten($body-color, 5%);
 
+// Code
+$code-block-border-color: lighten($body-color, 10%) !default;
+$code-block-bg: #FFFFFF;
+
 // Links and actions
 $link-color: #a84d0e;
 $link-hover-color: darken($link-color, 20%);
