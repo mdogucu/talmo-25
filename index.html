@@ -98,7 +98,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-abeb75af577d2e4be54c6f7b28531af8.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-0ace4eb5ff951bce52b064262c1d14af.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -483,182 +483,184 @@ Delete if not used:
 </section>
 <section id="data-documentation" class="slide level2">
 <h2>Data documentation</h2>
-<p>Document data files to reflect both dataset contents and provenance:</p>
+<p>Document contents and provenance of data files:</p>
+<div class="columns">
+<div class="column fragment" style="width:30%;">
+<p><strong>Option 1:</strong></p>
+<p>A single <code>README.md</code> file with variable descriptions and provenance.</p>
+</div><div class="column fragment" style="width:70%;">
+<p><strong>Option 2:</strong></p>
+<div>
 <ul>
-<li class="fragment">Use a plain text README file for provenance and variable descriptions.<br>
-</li>
-<li class="fragment">Alternatively, use:
-<ul>
-<li class="fragment">A CSV file for variable descriptions (spreadsheet format).<br>
-</li>
-<li class="fragment">A plain text README file for data provenance.<br>
-</li>
-</ul></li>
-<li class="fragment">Ensure files are in plain text for version control compatibility.<br>
-</li>
-<li class="fragment">Avoid using spreadsheets like Excel or Google Sheets.</li>
+<li>A CSV file with variable descriptions with columns <code>name</code> and <code>description</code>.</li>
+<li>A <code>README.md</code> file with data provenance.</li>
 </ul>
+</div>
+</div></div>
+<div class="fragment">
+<div class="callout callout-tip callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Use plain-text formats, not spreadsheets like Excel or Google Sheets, for version control compatibility.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
-<section id="folder-documentation" class="slide level2">
+<section id="folder-documentation" class="slide level2 smaller">
 <h2>Folder documentation</h2>
-<p>Include a README file in the course folder and each top-level subfolder.</p>
-<ul>
-<li class="fragment">The README should explain the folder’s contents.<br>
-</li>
-<li class="fragment">It should also outline steps to reproduce materials, such as <code>quarto render</code>.</li>
-</ul>
+<p>Include a plain-text README file in the course folder and each top-level subfolder explaining the folder’s contents and outlining steps to reproduce materials, e.g., <code>quarto render</code>.</p>
+<div class="fragment">
+<div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="" aria-hidden="true" tabindex="-1"></a>README.md</span>
+<span id="cb13-2"><a href="" aria-hidden="true" tabindex="-1"></a>|-- slides</span>
+<span id="cb13-3"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- README.md</span>
+<span id="cb13-4"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- deck-1.qmd</span>
+<span id="cb13-5"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- deck-2.qmd</span>
+<span id="cb13-6"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- ...</span>
+<span id="cb13-7"><a href="" aria-hidden="true" tabindex="-1"></a>|-- labs</span>
+<span id="cb13-8"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- README.md</span>
+<span id="cb13-9"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- lab-1.qmd</span>
+<span id="cb13-10"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- lab-2.qmd</span>
+<span id="cb13-11"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- ...</span>
+<span id="cb13-12"><a href="" aria-hidden="true" tabindex="-1"></a>|-- data</span>
+<span id="cb13-13"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- bike-rentals</span>
+<span id="cb13-14"><a href="" aria-hidden="true" tabindex="-1"></a>        |-- README.md</span>
+<span id="cb13-15"><a href="" aria-hidden="true" tabindex="-1"></a>        |-- bike-rentals.csv</span>
+<span id="cb13-16"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- sales-taxes</span>
+<span id="cb13-17"><a href="" aria-hidden="true" tabindex="-1"></a>        |-- README.md</span>
+<span id="cb13-18"><a href="" aria-hidden="true" tabindex="-1"></a>        |-- sales-taxes.csv</span>
+<span id="cb13-19"><a href="" aria-hidden="true" tabindex="-1"></a>|-- ...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="software-documentation---reproducibility" class="slide level2">
-<h2>Software documentation - Reproducibility</h2>
-<ul>
-<li class="fragment">List R version, package names, and versions in the project’s root README file.<br>
-</li>
-<li class="fragment">Use <code>session_info()</code> in Quarto-generated README files for formatted package details.<br>
-</li>
-<li class="fragment">Consider adding software version details to individual teaching documents if more granularity is needed.</li>
-</ul>
+<section id="software-documentation" class="slide level2">
+<h2>Software documentation</h2>
+<div class="columns">
+<div class="column fragment" style="width:40%;">
+<p><strong>Minimum:</strong></p>
+<p>Document versions of R, Quarto, packages, etc. README files, manually updated or programmatically generated with <code>session_info()</code>.</p>
+</div><div class="column fragment" style="width:30%;">
+<p><strong>Medium:</strong></p>
+<p>Use <code>renv</code> (R) or <code>venv</code> (Python) to preserve the computational environment.</p>
+</div><div class="column fragment" style="width:30%;">
+<p><strong>Advanced:</strong></p>
+<p>Use Docker containers for full environment snapshots.</p>
+</div></div>
 </section>
-<section id="software-documentation---computational-environments" class="slide level2">
-<h2>Software documentation - Computational environments</h2>
-<ul>
-<li class="fragment"><p><strong>Basic Approach:</strong> Use <code>renv</code> (R) or <code>venv</code> (Python) to preserve the specific computational environment.</p></li>
-<li class="fragment"><p><strong>Advanced Approach:</strong> Use Docker containers for full environment snapshots (more complex and harder to maintain).</p></li>
-</ul>
-</section>
-<section id="software-documentation---reproducibility-in-teaching-communication" class="slide level2">
-<h2>Software documentation - Reproducibility in teaching &amp; communication</h2>
-<ul>
-<li class="fragment"><p>Apply reproducibility principles when answering student questions in online forums.</p></li>
-<li class="fragment"><p>Use the <code>reprex</code> package to generate reproducible code snippets and share session details.</p></li>
-</ul>
+<section id="reproducibility-in-communication" class="slide level2">
+<h2>Reproducibility in communication</h2>
+<p>Use the <code>reprex</code> package to generate reproducible code snippets and share session details when answering student questions.</p>
+<div class="example fragment">
+<ol type="1">
+<li>Copy code:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href=""></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span></span>
+<span id="cb14-2"><a href=""></a>y <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span></span>
+<span id="cb14-3"><a href=""></a>x <span class="sc">+</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="1">
+<li><p>Run <code>reprex::reprex()</code>.</p></li>
+<li><p>Paste from clipboard:</p></li>
+</ol>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span></span>
+<span id="cb15-2"><a href="" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">4</span></span>
+<span id="cb15-3"><a href="" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> y</span>
+<span id="cb15-4"><a href="" aria-hidden="true" tabindex="-1"></a><span class="co">#&gt; [1] 2 4 4 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
 <section id="whats-your-style" class="slide level2">
 <h2>What’s your style?</h2>
 <p><strong>Option 1:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href=""></a>modelweight<span class="ot">&lt;-</span><span class="fu">lm</span>(mpg<span class="sc">~</span>wt,<span class="at">data=</span><span class="fu">subset</span>(mtcars,am<span class="sc">==</span><span class="dv">1</span>),<span class="at">na.action=</span>na.exclude)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href=""></a>modelweight<span class="ot">&lt;-</span><span class="fu">lm</span>(mpg<span class="sc">~</span>wt,<span class="at">data=</span><span class="fu">subset</span>(mtcars,am<span class="sc">==</span><span class="dv">1</span>),<span class="at">na.action=</span>na.exclude)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="fragment">
 <p><br></p>
-<p>or <strong>Option 2:</strong></p>
+<p>or</p>
+<p><br> <strong>Option 2:</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href=""></a>model_weight <span class="ot">&lt;-</span> <span class="fu">lm</span>(</span>
-<span id="cb14-2"><a href=""></a>  mpg ˜ wt,</span>
-<span id="cb14-3"><a href=""></a>  <span class="at">data =</span> <span class="fu">subset</span>(mtcars, am <span class="sc">==</span> <span class="dv">1</span>),</span>
-<span id="cb14-4"><a href=""></a>  <span class="at">na.action =</span> na.exclude</span>
-<span id="cb14-5"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href=""></a>model_weight <span class="ot">&lt;-</span> <span class="fu">lm</span>(</span>
+<span id="cb17-2"><a href=""></a>  mpg ˜ wt,</span>
+<span id="cb17-3"><a href=""></a>  <span class="at">data =</span> <span class="fu">subset</span>(mtcars, am <span class="sc">==</span> <span class="dv">1</span>),</span>
+<span id="cb17-4"><a href=""></a>  <span class="at">na.action =</span> na.exclude</span>
+<span id="cb17-5"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="style-guide" class="slide level2 smaller">
+<section id="style-guide" class="slide level2">
 <h2>Style guide</h2>
 <ul>
-<li class="fragment"><strong>Readable Code Practices</strong>
+<li class="fragment"><p>Pick a style, any (reasonable) style, but, at a minimum, avoid spaces and use line breaks to improve human and machine readability.</p></li>
+<li class="fragment"><p>Ideally, conform to a established, professional style guide for better student preparedness:</p>
 <ul>
-<li class="fragment">Use spaces and multiple lines to improve readability.<br>
-</li>
-<li class="fragment">Well-structured code is both human-readable and machine-readable.</li>
-</ul></li>
-<li class="fragment"><strong>Coding Style Guides</strong>
-<ul>
-<li class="fragment">The <strong>tidyverse style guide</strong> is recommended for R courses using tidyverse packages.<br>
-</li>
-<li class="fragment">Other examples:
-<ul>
-<li class="fragment"><strong>Google’s Python Style Guide</strong><br>
-</li>
-<li class="fragment"><strong>Julia Style Guide</strong></li>
-</ul></li>
-</ul></li>
-<li class="fragment"><strong>Consistency in Teaching &amp; Industry</strong>
-<ul>
-<li class="fragment">Use an established style guide instead of creating a custom one.<br>
-</li>
-<li class="fragment">Align coursework coding style with industry standards for better student preparedness.</li>
+<li class="fragment"><strong>tidyverse style guide</strong>: <a href="https://style.tidyverse.org/">style.tidyverse.org</a></li>
+<li class="fragment"><strong>Google’s Python style guide</strong>: <a href="https://google.github.io/styleguide/pyguide.html">google.github.io/styleguide/pyguide.html</a></li>
+<li class="fragment"><strong>Julia style guide</strong>: <a href="https://docs.julialang.org/en/v1/manual/style-guide/">docs.julialang.org/en/v1/manual/style-guide</a></li>
 </ul></li>
 </ul>
 </section></section>
 <section>
-<section id="openness" class="title-slide slide level1 smaller center">
+<section id="openness" class="title-slide slide level1 center">
 <h1>Openness</h1>
-<ul>
-<li class="fragment"><strong>Openly Releasing Teaching Materials Should Be the Standard</strong>
-<ul>
-<li class="fragment">Sharing materials openly increases accessibility and reusability.</li>
-</ul></li>
-<li class="fragment"><strong>Challenges in University Practices</strong>
-<ul>
-<li class="fragment">Universities often require materials to be posted on course management systems with restricted access.<br>
-</li>
-<li class="fragment">This provides consistency for students across courses but limits broader access.</li>
-</ul></li>
-<li class="fragment"><strong>Balancing Accessibility &amp; Institutional Requirements</strong>
-<ul>
-<li class="fragment">Consider posting materials both on university platforms (for students) and publicly (for wider access).<br>
-</li>
-<li class="fragment">Open access benefits learners worldwide, while open-source sharing allows other educators to adapt and reuse materials.</li>
-</ul></li>
-</ul>
+
+</section>
+<section id="gold-standard" class="slide level2">
+<h2>Gold standard</h2>
+<p>Openly share materials on publicly hosted websites to increase accessibility and reusability.</p>
+<div class="fragment">
+<p><strong>Challenge:</strong> University policies on hosting course materials in password-protected LMS – consistency for students across courses but limits broader access.</p>
+</div>
+<div class="fragment">
+<div class="callout callout-tip callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Consider posting materials both on university platforms (for students) and publicly (for wider access). Open access benefits learners worldwide, while open-source sharing allows other educators to adapt and reuse materials.</p>
+</div>
+</div>
+</div>
+</div>
 </section>
 <section id="licensing" class="slide level2 smaller">
 <h2>Licensing</h2>
+<p>Always release materials with a license, whether open-access or open-source.</p>
+<div class="columns">
+<div class="column fragment">
+<p><strong>Non-software:</strong></p>
+<p>Consider whether to allow derivative works and re-sharing (e.g., share-alike options):</p>
+<div>
 <ul>
-<li class="fragment"><strong>Importance of Licensing Teaching Materials</strong>
-<ul>
-<li class="fragment">Always release materials with a license, whether open access or open source.<br>
+<li><strong>Creative Commons (CC) licenses</strong> are recommended.<br>
 </li>
-<li class="fragment">The choice of license depends on the material type (lesson plans, slides, code) and desired reuse restrictions.</li>
-</ul></li>
-<li class="fragment"><strong>Licensing for Non-Software Materials</strong>
-<ul>
-<li class="fragment"><strong>Creative Commons (CC) licenses</strong> are recommended.<br>
+<li><strong>CC BY-NC 4.0</strong>: Allows reuse with attribution but restricts commercial use (useful for future textbooks).<br>
 </li>
-<li class="fragment"><strong>CC BY-NC 4.0</strong>: Allows reuse with attribution but restricts commercial use (useful for future textbooks).<br>
-</li>
-<li class="fragment"><strong>CC BY 4.0</strong>: Allows both commercial and non-commercial use (e.g., corporate training, MOOCs).<br>
-</li>
-<li class="fragment">Consider whether to allow derivative works and re-sharing (e.g., share-alike options).</li>
-</ul></li>
-<li class="fragment"><strong>Licensing for Software-Based Teaching Materials</strong>
-<ul>
-<li class="fragment"><strong>MIT License</strong> and <strong>General Public License (GPL)</strong> are more suitable than Creative Commons for software.</li>
-</ul></li>
-<li class="fragment"><strong>Further Learning</strong>
-<ul>
-<li class="fragment">Educators should familiarize themselves with licensing options before making a choice.<br>
-</li>
-<li class="fragment">Recommended reading: Hilton III et al.&nbsp;(2010) on licensing and open educational resources.</li>
-</ul></li>
+<li><strong>CC BY 4.0</strong>: Allows both commercial and non-commercial use (e.g., corporate training, MOOCs).</li>
 </ul>
-</section>
-<section id="hosting" class="slide level2 smaller">
-<h2>Hosting</h2>
+</div>
+</div><div class="column fragment">
+<p><strong>Software:</strong></p>
+<div>
 <ul>
-<li class="fragment"><strong>Hosting Public Course Websites</strong>
-<ul>
-<li class="fragment">Public course websites are ideal for sharing teaching materials.<br>
-</li>
-<li class="fragment">Websites must be hosted and deployed for accessibility.</li>
-</ul></li>
-<li class="fragment"><strong>Hosting Options</strong>
-<ul>
-<li class="fragment"><strong>GitHub + Netlify</strong>:
-<ul>
-<li class="fragment">Host websites directly from a GitHub repository.<br>
-</li>
-<li class="fragment">Enable continuous deployment—updates in GitHub reflect quickly on the site.<br>
-</li>
-<li class="fragment">Free tiers of GitHub Pages and Netlify are often sufficient.<br>
-</li>
-</ul></li>
-<li class="fragment"><strong>Institutional Websites</strong>:
-<ul>
-<li class="fragment">Another option for hosting course materials.<br>
-</li>
-<li class="fragment">May be affected by university server maintenance schedules.</li>
-</ul></li>
-</ul></li>
+<li><strong>MIT License</strong></li>
+<li><strong>General Public License (GPL)</strong> etc.</li>
 </ul>
+</div>
+</div></div>
+<div class="fragment">
+<div class="callout callout-tip callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Educators should familiarize themselves with licensing options before making a choice. Recommended reading: <em>The four ’R’s of openness and ALMS analysis: frameworks for open educational resources</em> by Hilton III et al.&nbsp;(2010) on licensing and open educational resources.</p>
+</div>
+</div>
+</div>
+</div>
 </section></section>
 <section>
 <section id="concluding-remarks" class="title-slide slide level1 center">
