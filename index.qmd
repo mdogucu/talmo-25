@@ -181,7 +181,130 @@ Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social)
 
 ![](img/github-classroom.jpg){fig-align="center" width=900}
 
+# Documentation
 
+## Data documentation
+
+Document data files to reflect both dataset contents and provenance:
+
+- Use a plain text README file for provenance and variable descriptions.  
+- Alternatively, use:  
+  - A CSV file for variable descriptions (spreadsheet format).  
+  - A plain text README file for data provenance.  
+- Ensure files are in plain text for version control compatibility.  
+- Avoid using spreadsheets like Excel or Google Sheets.  
+
+## Folder documentation
+
+Include a README file in the course folder and each top-level subfolder.  
+
+- The README should explain the folder's contents.  
+- It should also outline steps to reproduce materials, such as `quarto render`.
+
+## Software documentation - Reproducibility
+
+- List R version, package names, and versions in the project’s root README file.  
+- Use `session_info()` in Quarto-generated README files for formatted package details.  
+- Consider adding software version details to individual teaching documents if more granularity is needed. 
+
+## Software documentation - Computational environments
+
+- **Basic Approach:** Use `renv` (R) or `venv` (Python) to preserve the specific computational environment.  
+
+- **Advanced Approach:** Use Docker containers for full environment snapshots (more complex and harder to maintain).  
+
+## Software documentation - Reproducibility in teaching & communication
+
+- Apply reproducibility principles when answering student questions in online forums.  
+
+- Use the `reprex` package to generate reproducible code snippets and share session details.  
+
+## What's your style?
+
+**Option 1:**
+
+```{r}
+#| eval: false
+modelweight<-lm(mpg~wt,data=subset(mtcars,am==1),na.action=na.exclude)
+```
+
+. . .
+
+<br>
+
+or **Option 2:**
+
+```{r}
+#| eval: false
+model_weight <- lm(
+  mpg ˜ wt,
+  data = subset(mtcars, am == 1),
+  na.action = na.exclude
+)
+```
+
+## Style guide {.smaller}
+
+- **Readable Code Practices**  
+  - Use spaces and multiple lines to improve readability.  
+  - Well-structured code is both human-readable and machine-readable.  
+
+- **Coding Style Guides**  
+  - The **tidyverse style guide** is recommended for R courses using tidyverse packages.  
+  - Other examples:  
+    - **Google’s Python Style Guide**  
+    - **Julia Style Guide**  
+
+- **Consistency in Teaching & Industry**  
+  - Use an established style guide instead of creating a custom one.  
+  - Align coursework coding style with industry standards for better student preparedness.
+
+# Openness {.smaller}
+
+- **Openly Releasing Teaching Materials Should Be the Standard**  
+  - Sharing materials openly increases accessibility and reusability.  
+
+- **Challenges in University Practices**  
+  - Universities often require materials to be posted on course management systems with restricted access.  
+  - This provides consistency for students across courses but limits broader access.  
+
+- **Balancing Accessibility & Institutional Requirements**  
+  - Consider posting materials both on university platforms (for students) and publicly (for wider access).  
+  - Open access benefits learners worldwide, while open-source sharing allows other educators to adapt and reuse materials.
+
+## Licensing {.smaller}
+
+- **Importance of Licensing Teaching Materials**  
+  - Always release materials with a license, whether open access or open source.  
+  - The choice of license depends on the material type (lesson plans, slides, code) and desired reuse restrictions.  
+
+- **Licensing for Non-Software Materials**  
+  - **Creative Commons (CC) licenses** are recommended.  
+  - **CC BY-NC 4.0**: Allows reuse with attribution but restricts commercial use (useful for future textbooks).  
+  - **CC BY 4.0**: Allows both commercial and non-commercial use (e.g., corporate training, MOOCs).  
+  - Consider whether to allow derivative works and re-sharing (e.g., share-alike options).  
+
+- **Licensing for Software-Based Teaching Materials**  
+  - **MIT License** and **General Public License (GPL)** are more suitable than Creative Commons for software.  
+
+- **Further Learning**  
+  - Educators should familiarize themselves with licensing options before making a choice.  
+  - Recommended reading: Hilton III et al. (2010) on licensing and open educational resources.
+
+## Hosting {.smaller}
+
+- **Hosting Public Course Websites**  
+  - Public course websites are ideal for sharing teaching materials.  
+  - Websites must be hosted and deployed for accessibility.  
+
+- **Hosting Options**  
+  - **GitHub + Netlify**:  
+    - Host websites directly from a GitHub repository.  
+    - Enable continuous deployment—updates in GitHub reflect quickly on the site.  
+    - Free tiers of GitHub Pages and Netlify are often sufficient.  
+  - **Institutional Websites**:  
+    - Another option for hosting course materials.  
+    - May be affected by university server maintenance schedules.
 
 # Concluding remarks
 
