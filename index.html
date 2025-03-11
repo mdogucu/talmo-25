@@ -6,10 +6,10 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="index_files/libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="index_files/libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.39">
+  <meta name="generator" content="quarto-1.6.42">
 
   <meta name="author" content="Mine Dogucu   University of California Irvine">
   <meta name="author" content="Mine Çetinkaya-Rundel   Duke University">
@@ -98,7 +98,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-71eda07f20e1a4dd43dd06ff8c466d86.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-abeb75af577d2e4be54c6f7b28531af8.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -348,27 +348,49 @@ Mine Çetinkaya-Rundel <br> Duke University
 </section>
 <section id="literate-programming" class="slide level2">
 <h2>Literate programming</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/rmarkdown.png" class="quarto-figure quarto-figure-center" width="800"></p>
+</figure>
+</div>
 
-<img data-src="img/rmarkdown.png" class="quarto-figure quarto-figure-center r-stretch" width="1988"><p>Artwork by <a href="https://bsky.app/profile/allisonhorst.bsky.social"><span class="citation" data-cites="allison_horst">@allison_horst</span></a></p>
+<aside><div>
+<p>Artwork by <a href="https://bsky.app/profile/allisonhorst.bsky.social"><span class="citation" data-cites="allison_horst">@allison_horst</span></a></p>
+</div></aside></section>
+<section id="literate-programming---websites" class="slide level2">
+<h2>Literate programming - Websites</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/website.png" class="quarto-figure quarto-figure-center" width="800"></p>
+</figure>
+</div>
 </section>
-<section id="literate-programming---course-websites" class="slide level2">
-<h2>Literate programming - Course websites</h2>
-
-<img data-src="img/website.png" class="quarto-figure quarto-figure-center r-stretch" width="483"></section>
 <section id="literate-programming---slides" class="slide level2">
 <h2>Literate programming - Slides</h2>
-
-<img data-src="img/slides.png" class="quarto-figure quarto-figure-center r-stretch" width="509"></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/slides.png" class="quarto-figure quarto-figure-center" width="800"></p>
+</figure>
+</div>
+</section>
 <section id="literate-programming---exams" class="slide level2">
 <h2>Literate programming - Exams</h2>
-
-<img data-src="img/exam.png" class="quarto-figure quarto-figure-center r-stretch" width="473"></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/exam.png" class="quarto-figure quarto-figure-center" width="800"></p>
+</figure>
+</div>
+</section>
 <section id="raw-data---real-data" class="slide level2">
-<h2>Raw data - real data</h2>
-
-<img data-src="img/raw-data.png" class="quarto-figure quarto-figure-center r-stretch" width="651"></section>
+<h2>Raw data - Real data</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/raw-data.png" class="quarto-figure quarto-figure-center" width="900"></p>
+</figure>
+</div>
+</section>
 <section id="raw-data---simulated-data" class="slide level2">
-<h2>Raw data - simulated data</h2>
+<h2>Raw data - Simulated data</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href=""></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
 <span id="cb1-2"><a href=""></a><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>, <span class="at">size =</span> <span class="dv">3</span>, <span class="at">replace =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -399,39 +421,74 @@ Mine Çetinkaya-Rundel <br> Duke University
 </section>
 <section id="file-organization" class="slide level2">
 <h2>File organization</h2>
-
-<img data-src="img/file-organization.jpg" class="quarto-figure quarto-figure-center r-stretch" width="321"></section>
+<p><br></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a>week-11-simple-linreg</span>
+<span id="cb11-2"><a href="" aria-hidden="true" tabindex="-1"></a>|-- week-11-simple-linreg.Rproj</span>
+<span id="cb11-3"><a href="" aria-hidden="true" tabindex="-1"></a>|-- README.md</span>
+<span id="cb11-4"><a href="" aria-hidden="true" tabindex="-1"></a>|-- data</span>
+<span id="cb11-5"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- README.md</span>
+<span id="cb11-6"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- bike-rental.csv</span>
+<span id="cb11-7"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- birth-weight.csv</span>
+<span id="cb11-8"><a href="" aria-hidden="true" tabindex="-1"></a>|-- lectures</span>
+<span id="cb11-9"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- lec-11a-simple-linreg.qmd</span>
+<span id="cb11-10"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- lec-11b-indicator-var.qmd</span>
+<span id="cb11-11"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- lec-11c-assumptions.qmd</span>
+<span id="cb11-12"><a href="" aria-hidden="true" tabindex="-1"></a>|-- quizzes</span>
+<span id="cb11-13"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- quiz-11a-simple-linreg.qmd</span>
+<span id="cb11-14"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- quiz-11b-indicator-var.qmd</span>
+<span id="cb11-15"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- quiz-11c-assumptions.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<!--
+Delete if not used:
+![](img/file-organization.jpg){fig-align="center"}
+-->
+</section>
 <section id="file-organization-1" class="slide level2">
 <h2>File organization</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href=""></a><span class="fu">read.csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"bike-rental.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href=""></a><span class="fu">read.csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"bike-rental.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="version-control" class="slide level2">
 <h2>Version control</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/version-control.png" class="quarto-figure quarto-figure-center" width="900"></p>
+</figure>
+</div>
 
-<img data-src="img/version-control.png" class="quarto-figure quarto-figure-center r-stretch" width="4000"><p>Artwork by <a href="https://bsky.app/profile/allisonhorst.bsky.social"><span class="citation" data-cites="allison_horst">@allison_horst</span></a></p>
-</section>
+<aside><div>
+<p>Artwork by <a href="https://bsky.app/profile/allisonhorst.bsky.social"><span class="citation" data-cites="allison_horst">@allison_horst</span></a></p>
+</div></aside></section>
 <section id="version-control-1" class="slide level2">
 <h2>Version control</h2>
-
-<img data-src="img/git-diff.jpg" width="953" class="r-stretch quarto-figure-center"><p class="caption">Diff due to upgrading R from 3.5.3 to 4.1.0</p></section>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/git-diff.jpeg" width="600"></p>
+<figcaption>Diff due to upgrading R from 3.5.3 to 4.1.0</figcaption>
+</figure>
+</div>
+</section>
 <section id="version-control-2" class="slide level2">
 <h2>Version control</h2>
-
-<img data-src="img/github-classroom.jpg" class="quarto-figure quarto-figure-center r-stretch" width="320"></section></section>
-<section id="documentation" class="title-slide slide level1 center">
-<h1>Documentation</h1>
-
-</section>
-
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/github-classroom.jpg" class="quarto-figure quarto-figure-center" width="900"></p>
+</figure>
+</div>
+</section></section>
 <section>
-<section id="openness" class="title-slide slide level1 center">
-<h1>Openness</h1>
+<section id="concluding-remarks" class="title-slide slide level1 center">
+<h1>Concluding remarks</h1>
 
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
+</section>
+<section id="examples" class="slide level2">
+<h2>Examples</h2>
+</section>
+<section id="see-also" class="slide level2">
+<h2>See also</h2>
 <p><a href="https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-112723-034436">Dogucu, M. (2025). Reproducibility in the Classroom. Annual Review of Statistics and Its Application 2025. 12:89–105.</a></p>
 </section>
 <section id="questions" class="slide level2">
