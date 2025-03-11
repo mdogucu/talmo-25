@@ -11,11 +11,15 @@ format:
     slide-number: true
     incremental: true
     theme: style.scss
+    auto-stretch: false
+execute:
+  echo: true
 ---
 
 ## 
 
 ```{r}
+#| echo: false
 library(knitr)
 ```
 
@@ -89,46 +93,31 @@ All teaching materials should be
 
 ## Literate programming
 
-```{r}
-#| fig-align: center
-include_graphics("img/rmarkdown.png")
-```
+![](img/rmarkdown.png){fig-align="center" width=800}
 
+::: aside
 Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social) 
+:::
 
-## Literate programming - Course websites
+## Literate programming - Websites
 
-```{r}
-#| fig-align: center
-include_graphics("img/website.png")
-```
+![](img/website.png){fig-align="center" width=800}
 
 ## Literate programming - Slides
 
-```{r}
-#| fig-align: center
-include_graphics("img/slides.png")
-```
+![](img/slides.png){fig-align="center" width=800}
 
 ## Literate programming - Exams
 
-```{r}
-#| fig-align: center
-include_graphics("img/exam.png")
-```
+![](img/exam.png){fig-align="center" width=800}
 
+## Raw data - Real data
 
-## Raw data - real data
+![](img/raw-data.png){fig-align="center" width=900}
 
-```{r}
-#| fig-align: center
-include_graphics("img/raw-data.png")
-```
-
-## Raw data - simulated data
+## Raw data - Simulated data
 
 ```{r}
-#| echo: true
 set.seed(123)
 sample(1:100, size = 3, replace = FALSE)
 set.seed(123)
@@ -143,10 +132,30 @@ sample(1:100, size = 3, replace = FALSE)
 
 ## File organization
 
-```{r}
-#| fig-align: center
-include_graphics("img/file-organization.jpg")
+<br>
+
+```{.markdown code-line-numbers="false"}
+week-11-simple-linreg
+|-- week-11-simple-linreg.Rproj
+|-- README.md
+|-- data
+    |-- README.md
+    |-- bike-rental.csv
+    |-- birth-weight.csv
+|-- lectures
+    |-- lec-11a-simple-linreg.qmd
+    |-- lec-11b-indicator-var.qmd
+    |-- lec-11c-assumptions.qmd
+|-- quizzes
+    |-- quiz-11a-simple-linreg.qmd
+    |-- quiz-11b-indicator-var.qmd
+    |-- quiz-11c-assumptions.qmd
 ```
+
+<!--
+Delete if not used:
+![](img/file-organization.jpg){fig-align="center"}
+-->
 
 ## File organization
 
@@ -158,33 +167,29 @@ read.csv(here::here("data","bike-rental.csv"))
 
 ## Version control
 
-```{r}
-#| fig-align: center
-include_graphics("img/version-control.png")
-```
+![](img/version-control.png){fig-align="center" width=900}
 
+::: aside
 Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social) 
+:::
 
 ## Version control
 
-```{r}
-#| fig-align: center
-#| fig-cap: Diff due to upgrading R from 3.5.3 to 4.1.0
-include_graphics("img/git-diff.jpg")
-```
+![Diff due to upgrading R from 3.5.3 to 4.1.0](img/git-diff.jpeg){fig-align="center" width=600}
 
 ## Version control
 
-```{r}
-#| fig-align: center
-include_graphics("img/github-classroom.jpg")
-```
+![](img/github-classroom.jpg){fig-align="center" width=900}
 
-# Documentation
 
-# Openness
 
-##
+# Concluding remarks
+
+## 
+
+## Examples
+
+## See also
 
 [Dogucu, M. (2025). Reproducibility in the Classroom. Annual Review of Statistics and Its Application  2025. 12:89–105.](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-112723-034436)
 
