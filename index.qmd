@@ -185,14 +185,29 @@ Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social)
 
 ## Data documentation
 
-Document data files to reflect both dataset contents and provenance:
+Document contents and provenance of data files:
 
-- Use a plain text README file for provenance and variable descriptions.  
-- Alternatively, use:  
-  - A CSV file for variable descriptions (spreadsheet format).  
-  - A plain text README file for data provenance.  
-- Ensure files are in plain text for version control compatibility.  
-- Avoid using spreadsheets like Excel or Google Sheets.  
+::: {.columns}
+::: {.column width="30%" .fragment}
+**Option 1:**
+
+A single `README.md` file with variable descriptions and provenance.
+:::
+::: {.column width="70%" .fragment}
+**Option 2:**
+
+::: nonincremental
+- A CSV file with variable descriptions with columns `name` and `description`.
+- A `README.md` file with data provenance.
+:::
+:::
+:::
+
+. . .
+
+::: callout-tip
+Use plain text formats, not spreadsheets like Excel or Google Sheets, for version control compatibility.
+:::
 
 ## Folder documentation
 
