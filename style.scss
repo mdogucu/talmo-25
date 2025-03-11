@@ -28,8 +28,15 @@ $link-hover-color: darken($link-color, 20%);
   background: #fcece0;
 }
 
+.reveal .slide .example {
+  border: 1px solid lighten($body-color, 10%);
+  padding: 0.5em;
+  background: #FFFFFF;
+  font-size: 35px;
+}
+
 .font25{ 
-  font-size: 25px 
+  font-size: 25px
 }
 .font50{
   font-size: 50px 
