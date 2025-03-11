@@ -206,15 +206,36 @@ A single `README.md` file with variable descriptions and provenance.
 . . .
 
 ::: callout-tip
-Use plain text formats, not spreadsheets like Excel or Google Sheets, for version control compatibility.
+Use plain-text formats, not spreadsheets like Excel or Google Sheets, for version control compatibility.
 :::
 
-## Folder documentation
+## Folder documentation {.smaller}
 
-Include a README file in the course folder and each top-level subfolder.  
+Include a plain-text README file in the course folder and each top-level subfolder explaining the folder's contents and outlining steps to reproduce materials, e.g., `quarto render`.
 
-- The README should explain the folder's contents.  
-- It should also outline steps to reproduce materials, such as `quarto render`.
+. . .
+
+```{.markdown code-line-numbers="false"}
+README.md
+|-- slides
+    |-- README.md
+    |-- deck-1.qmd
+    |-- deck-2.qmd
+    |-- ...
+|-- labs
+    |-- README.md
+    |-- lab-1.qmd
+    |-- lab-2.qmd
+    |-- ...
+|-- data
+    |-- bike-rentals
+        |-- README.md
+        |-- bike-rentals.csv
+    |-- sales-taxes
+        |-- README.md
+        |-- sales-taxes.csv
+|-- ...
+```
 
 ## Software documentation - Reproducibility
 
