@@ -14,7 +14,7 @@ format:
     auto-stretch: false
 execute:
   echo: true
----auto
+---
 
 ## 
 
