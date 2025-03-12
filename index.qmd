@@ -437,7 +437,13 @@ https://doi.org/10.1146/annurev-statistics-112723-034436
 
 ## QUESTIONS?
 
-<br><br>
+<br>
+
+::: font50
+🔗 Slides at [mdogucu.github.io/talmo-25](https://mdogucu.github.io/talmo-25).
+:::
+
+<br>
 
 :::: {.columns}
 
