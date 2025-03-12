@@ -116,13 +116,27 @@ Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social)
 
 ## Literate programming - Websites
 
+::: {.font50}
+[introdata.science](https://introdata.science/)
+:::
+
 ![](img/website.png){fig-align="center" alt="Screenshot of course website for Stats 6 - Introduction to Data Science that shows the course logo with the URL instodata.science and a brief description of the course." width=800}
 
 ## Literate programming - Slides
 
+::: {.font50}
+[vizdata.org](https://vizdata.org/)
+:::
+
 ![](img/slides.png){fig-align="center" alt="Screenshot of Lecture 1 slides on a deep dive into ggplot2 layers from STA 313 - Spring 2024 by Mine Çetinkaya-Rundel at Duke University." width=800}
 
+
+
 ## Literate programming - Exams
+
+::: {.font50}
+[www.stats4cs.com](https://www.stats4cs.com/)
+:::
 
 ![](img/exam.png){fig-align="center" alt="Screenshot of a PDF containing final exam policies for Stats 67 at UCI." width=800}
 
@@ -133,7 +147,7 @@ Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social)
 ![](img/raw-data.png){fig-align="center" alt="A diagram for going from raw data to cleaning script to clean data." width=900}
 
 ::: {.callout-tip appearance="simple"}
-Keep data in the raw form you find or collect it, and record any steps to process it to prepare it for teaching 
+Keep data in the raw form you find or collect it, and record any steps to process it to prepare it for teaching. 
 :::
 
 ## Raw data - Simulated data
