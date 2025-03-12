@@ -488,13 +488,13 @@ https://doi.org/10.1146/annurev-statistics-112723-034436
 
 ## QUESTIONS?
 
-<br>
+<hr>
 
-::: font50
-🔗 Slides at [mdogucu.github.io/talmo-25](https://mdogucu.github.io/talmo-25).
-:::
+{{< fa link >}} Slides at [mdogucu.github.io/talmo-25](https://mdogucu.github.io/talmo-25).
 
-<br>
+{{< fa brands github >}} Source code for slides at [github.com/mdogucu/talmo-25](https://github.com/mdogucu/talmo-25).
+
+<hr>
 
 :::: {.columns}
 
