@@ -385,16 +385,14 @@ etc.
 :::
 
 ::: {.callout-tip appearance="simple" .fragment}
-Educators should familiarize themselves with licensing options before making a choice. Recommended reading: *The four 'R's of openness and ALMS analysis: frameworks for open educational resources* by Hilton III et al. (2010) on licensing and open educational resources.
+Educators should familiarize themselves with licensing options before making a choice. Recommended reading: *The four R's of openness and ALMS analysis: frameworks for open educational resources* by Hilton III et al. (2010) on licensing and open educational resources.
 :::
 :::
 :::
 
-# Concluding remarks
+# Coda
 
-## 
-
-## Example - STA 199 Frontend
+## Example - Frontend
 
 ::: {.font50}
 [sta199-f24.github.io](https://sta199-f24.github.io/)
@@ -402,7 +400,7 @@ Educators should familiarize themselves with licensing options before making a c
 
 ![](img/example-sta199-f24-frontend.png){fig-align="center" alt="Course website for STA 199 - Fall 2024 Introduction to Data Science and Statistical Thinking that shows a navigation bar on the left with the course hex logo and the schedule of the course on the right." width=800}
 
-## Example - STA 199 Backend
+## Example - Backend
 
 ::: {.font50}
 [github.com/sta199-f24/sta199-f24.github.io](https://github.com/sta199-f24/sta199-f24.github.io)
@@ -411,9 +409,31 @@ Educators should familiarize themselves with licensing options before making a c
 ![](img/example-sta199-f24-backend-repo.png){fig-align="center" alt="GitHub repo for the course website for STA 199 - Fall 2024." width=500}
 ![](img/example-sta199-f24-backend-readme.png){fig-align="center" alt="README in the GitHub repo for the course website for STA 199 - Fall 2024 that shows the color choices, instructions for rendering and publishing." width=500}
 
+## Challenges and benefits
+
+- Rarely, if ever, an investment in reproducibility doesn't pay off!
+
+- Adopting the complete framework likely requires learning new tools and keeping your (and your co-instructors' + TAs') knowledge of tools and ecosystems up to date, which is no small feat!
+
+- Openness brings free learning materials to your discipline and community as well as generates opportunities for collaboration and recognition and can serve as a role model for your students.
+
 ## See also
 
+:::: {.columns}
+
+::: {.column width="50%"}
 [Dogucu, M. (2025). Reproducibility in the Classroom. Annual Review of Statistics and Its Application  2025. 12:89–105.](https://www.annualreviews.org/content/journals/10.1146/annurev-statistics-112723-034436)
+:::
+
+::: {.column width="50%"}
+![](img/mine-paper.png){width=400 alt="PDF of first page of the referenced paper."}
+:::
+
+::::
+
+::: aside
+https://doi.org/10.1146/annurev-statistics-112723-034436
+:::
 
 ## QUESTIONS?
 
