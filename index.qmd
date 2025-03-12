@@ -136,7 +136,7 @@ Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social)
 [www.stats4cs.com](https://www.stats4cs.com/)
 :::
 
-![](img/exam.png){fig-align="center" alt="Screenshot of a PDF containing final exam policies for Stats 67 at UCI." width=800}
+![](img/exam.png){fig-align="center" alt="Screenshot of a PDF containing midterm exam question example for Stats 67 at UCI." width=800}
 
 ## Raw data - Real data
 
