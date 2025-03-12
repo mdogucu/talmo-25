@@ -371,7 +371,22 @@ Educators should familiarize themselves with licensing options before making a c
 
 ## 
 
-## Examples
+## Example - STA 199 Frontend
+
+::: {.font50}
+[sta199-f24.github.io](https://sta199-f24.github.io/)
+:::
+
+![](img/example-sta199-f24-frontend.png){fig-align="center" width=800}
+
+## Example - STA 199 Backend
+
+::: {.font50}
+[github.com/sta199-f24/sta199-f24.github.io](https://github.com/sta199-f24/sta199-f24.github.io)
+:::
+
+![](img/example-sta199-f24-backend-repo.png){fig-align="center" width=500}
+![](img/example-sta199-f24-backend-readme.png){fig-align="center" width=500}
 
 ## See also
 
