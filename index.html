@@ -367,14 +367,20 @@ Mine Çetinkaya-Rundel <br> Duke University
 </div></aside></section>
 <section id="literate-programming---websites" class="slide level2">
 <h2>Literate programming - Websites</h2>
+<div class="font50">
+<p><a href="https://introdata.science/">introdata.science</a></p>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/website.png" class="quarto-figure quarto-figure-center" alt="Screenshot of course website for Stats 6 - Introduction to Data Science that shows the course logo with the URL instodata.science and a brief description of the course." width="750"></p>
+<p><img data-src="img/website.png" class="quarto-figure quarto-figure-center" alt="Screenshot of course website for Stats 6 - Introduction to Data Science that shows the course logo with the URL introdata.science and a brief description of the course." width="750"></p>
 </figure>
 </div>
 </section>
 <section id="literate-programming---slides" class="slide level2">
 <h2>Literate programming - Slides</h2>
+<div class="font50">
+<p><a href="https://vizdata.org/">vizdata.org</a></p>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/slides.png" class="quarto-figure quarto-figure-center" alt="Screenshot of Lecture 1 slides on a deep dive into ggplot2 layers from STA 313 - Spring 2024 by Mine Çetinkaya-Rundel at Duke University." width="750"></p>
@@ -383,6 +389,9 @@ Mine Çetinkaya-Rundel <br> Duke University
 </section>
 <section id="literate-programming---exams" class="slide level2">
 <h2>Literate programming - Exams</h2>
+<div class="font50">
+<p><a href="https://www.stats4cs.com/">www.stats4cs.com</a></p>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="img/exam.png" class="quarto-figure quarto-figure-center" alt="Screenshot of a PDF containing final exam policies for Stats 67 at UCI." width="800"></p>
@@ -396,6 +405,16 @@ Mine Çetinkaya-Rundel <br> Duke University
 <figure>
 <p><img data-src="img/raw-data.png" class="quarto-figure quarto-figure-center" alt="A diagram for going from raw data to cleaning script to clean data." width="900"></p>
 </figure>
+</div>
+<div class="callout callout-tip callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Keep data in the raw form you find or collect it, and record any steps to process it to prepare it for teaching.</p>
+</div>
+</div>
 </div>
 </section>
 <section id="raw-data---simulated-data" class="slide level2">
@@ -430,6 +449,8 @@ Mine Çetinkaya-Rundel <br> Duke University
 </section>
 <section id="file-organization" class="slide level2">
 <h2>File organization</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
 <p><br></p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="" aria-hidden="true" tabindex="-1"></a>week-11-simple-linreg</span>
 <span id="cb11-2"><a href="" aria-hidden="true" tabindex="-1"></a>|-- week-11-simple-linreg.Rproj</span>
@@ -446,6 +467,36 @@ Mine Çetinkaya-Rundel <br> Duke University
 <span id="cb11-13"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- quiz-11a-simple-linreg.qmd</span>
 <span id="cb11-14"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- quiz-11b-indicator-var.qmd</span>
 <span id="cb11-15"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- quiz-11c-assumptions.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<p><br></p>
+<div class="callout callout-tip callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Adopt a project-based workflow to avoid changing file paths.</p>
+</div>
+</div>
+</div>
+<div>
+<div class="callout callout-tip callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>The file names should</p>
+<ul>
+<li><p>be machine-readable</p></li>
+<li><p>be human-readable</p></li>
+<li><p>play well with default-ordering</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div></div>
 </section>
 <section id="file-organization-1" class="slide level2">
 <h2>File organization</h2>
@@ -453,6 +504,17 @@ Mine Çetinkaya-Rundel <br> Duke University
 <div class="font50">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href=""></a><span class="fu">read.csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"bike-rental.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<p><br></p>
+<div class="callout callout-tip callout-style-simple">
+<div class="callout-body">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-content">
+<p>Use <code>here::here()</code> to set the file path to the root of the project.</p>
+</div>
 </div>
 </div>
 </section>

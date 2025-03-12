@@ -116,13 +116,25 @@ Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social)
 
 ## Literate programming - Websites
 
-![](img/website.png){fig-align="center" alt="Screenshot of course website for Stats 6 - Introduction to Data Science that shows the course logo with the URL instodata.science and a brief description of the course." width=750}
+::: {.font50}
+[introdata.science](https://introdata.science/)
+:::
+
+![](img/website.png){fig-align="center" alt="Screenshot of course website for Stats 6 - Introduction to Data Science that shows the course logo with the URL introdata.science and a brief description of the course." width=750}
 
 ## Literate programming - Slides
+
+::: {.font50}
+[vizdata.org](https://vizdata.org/)
+:::
 
 ![](img/slides.png){fig-align="center" alt="Screenshot of Lecture 1 slides on a deep dive into ggplot2 layers from STA 313 - Spring 2024 by Mine Çetinkaya-Rundel at Duke University." width=750}
 
 ## Literate programming - Exams
+
+::: {.font50}
+[www.stats4cs.com](https://www.stats4cs.com/)
+:::
 
 ![](img/exam.png){fig-align="center" alt="Screenshot of a PDF containing final exam policies for Stats 67 at UCI." width=800}
 
@@ -131,6 +143,10 @@ Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social)
 <br>
 
 ![](img/raw-data.png){fig-align="center" alt="A diagram for going from raw data to cleaning script to clean data." width=900}
+
+::: {.callout-tip appearance="simple"}
+Keep data in the raw form you find or collect it, and record any steps to process it to prepare it for teaching. 
+:::
 
 ## Raw data - Simulated data
 
@@ -149,6 +165,9 @@ sample(1:100, size = 3, replace = FALSE)
 
 ## File organization
 
+:::: {.columns}
+
+::: {.column width="50%"}
 <br>
 
 ```{.markdown code-line-numbers="false"}
@@ -168,6 +187,32 @@ week-11-simple-linreg
     |-- quiz-11b-indicator-var.qmd
     |-- quiz-11c-assumptions.qmd
 ```
+:::
+
+::: {.column width="50%"}
+
+<br>
+
+::: {.callout-tip appearance="simple"}
+Adopt a project-based workflow to avoid changing file paths.
+:::
+
+::: {.nonincremental}
+
+::: {.callout-tip appearance="simple"}
+The file names should 
+
+- be machine-readable
+
+- be human-readable
+
+- play well with default-ordering
+:::
+
+:::
+
+:::
+::::
 
 ## File organization
 
@@ -179,6 +224,12 @@ week-11-simple-linreg
 #| echo: true
 read.csv(here::here("data","bike-rental.csv"))
 ```
+:::
+
+<br>
+
+::: {.callout-tip appearance="simple"}
+Use `here::here()` to set the file path to the root of the project.
 :::
 
 ## Version control
