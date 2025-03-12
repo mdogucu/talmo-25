@@ -14,12 +14,7 @@ format:
     auto-stretch: false
 execute:
   echo: true
----
-
-```{r}
-#| echo: false
-library(knitr)
-```
+---auto
 
 ## 
 
