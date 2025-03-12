@@ -16,19 +16,34 @@ execute:
   echo: true
 ---
 
-## 
-
 ```{r}
 #| echo: false
 library(knitr)
 ```
 
+## 
 
-[Dogucu, M., & Çetinkaya-Rundel, M. (2022). Tools and Recommendations for Reproducible Teaching. Journal of Statistics and Data Science Education, 30(3), 251–260. https://doi.org/10.1080/26939169.2022.2138645](https://www.tandfonline.com/doi/full/10.1080/26939169.2022.2138645)
+:::: {.columns}
 
-. . .
+::: {.column width="50%"}
+[Dogucu, M., & Çetinkaya-Rundel, M. (2022). Tools and Recommendations for Reproducible Teaching. Journal of Statistics and Data Science Education, 30(3), 251–260.](https://www.tandfonline.com/doi/full/10.1080/26939169.2022.2138645)
 
+::: {.fragment}
 with updated examples
+:::
+
+:::
+
+::: {.column width="50%"}
+![](img/paper.png){width=400 alt="PDF of first page of the referenced paper."}
+:::
+
+::::
+
+::: aside
+https://doi.org/10.1080/26939169.2022.2138645
+:::
+
 
 ## Teacher-Scholar's Toolkit
 
@@ -93,7 +108,7 @@ All teaching materials should be
 
 ## Literate programming
 
-![](img/rmarkdown.png){fig-align="center" width=800}
+![](img/rmarkdown.png){fig-align="center" alt="Two fuzzy round monsters dressed as wizards, working together to brew different things together from a pantry (code, text, figures, etc.) in a cauldron labeled “R Markdown”. The monster wizard at the cauldron is reading a recipe that includes steps “1. Add text. 2. Add code. 3. Knit. 4. (magic) 5. Celebrate perceived wizardry.” The R Markdown potion then travels through a tube, and is converted to markdown by a monster on a broom with a magic wand, and eventually converted to an output by pandoc. Stylized text (in a font similar to Harry Potter) reads 'R Markdown. Text. Code. Output. Get it together, people.'" width=800}
 
 ::: aside
 Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social) 
@@ -101,19 +116,21 @@ Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social)
 
 ## Literate programming - Websites
 
-![](img/website.png){fig-align="center" width=800}
+![](img/website.png){fig-align="center" alt="Screenshot of course website for Stats 6 - Introduction to Data Science that shows the course logo with the URL instodata.science and a brief description of the course." width=800}
 
 ## Literate programming - Slides
 
-![](img/slides.png){fig-align="center" width=800}
+![](img/slides.png){fig-align="center" alt="Screenshot of Lecture 1 slides on a deep dive into ggplot2 layers from STA 313 - Spring 2024 by Mine Çetinkaya-Rundel at Duke University." width=800}
 
 ## Literate programming - Exams
 
-![](img/exam.png){fig-align="center" width=800}
+![](img/exam.png){fig-align="center" alt="Screenshot of a PDF containing final exam policies for Stats 67 at UCI." width=800}
 
 ## Raw data - Real data
 
-![](img/raw-data.png){fig-align="center" width=900}
+<br>
+
+![](img/raw-data.png){fig-align="center" alt="A diagram for going from raw data to cleaning script to clean data." width=900}
 
 ## Raw data - Simulated data
 
@@ -152,22 +169,21 @@ week-11-simple-linreg
     |-- quiz-11c-assumptions.qmd
 ```
 
-<!--
-Delete if not used:
-![](img/file-organization.jpg){fig-align="center"}
--->
-
 ## File organization
 
+<br>
+
+::: {.font50}
 ```{r}
 #| eval: false
 #| echo: true
 read.csv(here::here("data","bike-rental.csv"))
 ```
+:::
 
 ## Version control
 
-![](img/version-control.png){fig-align="center" width=900}
+![](img/version-control.png){fig-align="center" alt="A quote by Jenny Bryan that reads 'Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymmetric model, in which some people are active makers and others only read or review.' and illustrations of six colorful monsters by Allison Horst." width=900}
 
 ::: aside
 Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social) 
@@ -175,11 +191,11 @@ Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social)
 
 ## Version control
 
-![Diff due to upgrading R from 3.5.3 to 4.1.0](img/git-diff.jpeg){fig-align="center" width=600}
+![Diff due to upgrading R from 3.5.3 to 4.1.0](img/git-diff.jpeg){fig-align="center" alt="RStudio Git Pane showing the diff due to upgrading from R 3.5.3 to 4.1.0 which resulted in a new set of randomly generated numbers from the same code." width=600}
 
 ## Version control
 
-![](img/github-classroom.jpg){fig-align="center" width=900}
+![](img/github-classroom.jpg){fig-align="center" alt="A blackboard with the GitHub octocat logo and GitHub Classroom logo with the text 'Your course assignments on GitHub'." width=900}
 
 # Documentation
 
@@ -293,12 +309,11 @@ x + y
 modelweight<-lm(mpg~wt,data=subset(mtcars,am==1),na.action=na.exclude)
 ```
 
-<br>
-
-or
+. . .
 
 <br>
-**Option 2:**
+
+or **Option 2:**
 
 ```{r}
 #| eval: false
@@ -308,6 +323,13 @@ model_weight <- lm(
   na.action = na.exclude
 )
 ```
+
+. . .
+
+<br>
+
+or **Option 3:** Who cares? It doesn't matter!
+
 
 ## Style guide
 
@@ -350,7 +372,9 @@ Consider whether to allow derivative works and re-sharing (e.g., share-alike opt
 - **CC BY 4.0**: Allows both commercial and non-commercial use (e.g., corporate training, MOOCs).
 :::
 :::
-::: {.column .fragment}
+::: {.column}
+
+::: {.fragment}
 **Software:**
 
 ::: {.nonincremental}
@@ -359,12 +383,11 @@ Consider whether to allow derivative works and re-sharing (e.g., share-alike opt
 etc.
 :::
 :::
-:::
 
-. . .
-
-::: {.callout-tip appearance="simple"}
+::: {.callout-tip appearance="simple" .fragment}
 Educators should familiarize themselves with licensing options before making a choice. Recommended reading: *The four 'R's of openness and ALMS analysis: frameworks for open educational resources* by Hilton III et al. (2010) on licensing and open educational resources.
+:::
+:::
 :::
 
 # Concluding remarks
@@ -377,7 +400,7 @@ Educators should familiarize themselves with licensing options before making a c
 [sta199-f24.github.io](https://sta199-f24.github.io/)
 :::
 
-![](img/example-sta199-f24-frontend.png){fig-align="center" width=800}
+![](img/example-sta199-f24-frontend.png){fig-align="center" alt="Course website for STA 199 - Fall 2024 Introduction to Data Science and Statistical Thinking that shows a navigation bar on the left with the course hex logo and the schedule of the course on the right." width=800}
 
 ## Example - STA 199 Backend
 
@@ -385,8 +408,8 @@ Educators should familiarize themselves with licensing options before making a c
 [github.com/sta199-f24/sta199-f24.github.io](https://github.com/sta199-f24/sta199-f24.github.io)
 :::
 
-![](img/example-sta199-f24-backend-repo.png){fig-align="center" width=500}
-![](img/example-sta199-f24-backend-readme.png){fig-align="center" width=500}
+![](img/example-sta199-f24-backend-repo.png){fig-align="center" alt="GitHub repo for the course website for STA 199 - Fall 2024." width=500}
+![](img/example-sta199-f24-backend-readme.png){fig-align="center" alt="README in the GitHub repo for the course website for STA 199 - Fall 2024 that shows the color choices, instructions for rendering and publishing." width=500}
 
 ## See also
 

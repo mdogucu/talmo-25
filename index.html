@@ -216,11 +216,19 @@ Mine Çetinkaya-Rundel <br> Duke University
 </section>
 <section id="section" class="slide level2">
 <h2></h2>
-<p><a href="https://www.tandfonline.com/doi/full/10.1080/26939169.2022.2138645">Dogucu, M., &amp; Çetinkaya-Rundel, M. (2022). Tools and Recommendations for Reproducible Teaching. Journal of Statistics and Data Science Education, 30(3), 251–260. https://doi.org/10.1080/26939169.2022.2138645</a></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><a href="https://www.tandfonline.com/doi/full/10.1080/26939169.2022.2138645">Dogucu, M., &amp; Çetinkaya-Rundel, M. (2022). Tools and Recommendations for Reproducible Teaching. Journal of Statistics and Data Science Education, 30(3), 251–260.</a></p>
 <div class="fragment">
 <p>with updated examples</p>
 </div>
-</section>
+</div><div class="column" style="width:50%;">
+<p><img data-src="img/paper.png" alt="PDF of first page of the referenced paper." width="400"></p>
+</div></div>
+
+<aside><div>
+<p>https://doi.org/10.1080/26939169.2022.2138645</p>
+</div></aside></section>
 <section id="teacher-scholars-toolkit" class="slide level2">
 <h2>Teacher-Scholar’s Toolkit</h2>
 <table class="caption-top">
@@ -350,7 +358,7 @@ Mine Çetinkaya-Rundel <br> Duke University
 <h2>Literate programming</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/rmarkdown.png" class="quarto-figure quarto-figure-center" width="800"></p>
+<p><img data-src="img/rmarkdown.png" class="quarto-figure quarto-figure-center" alt="Two fuzzy round monsters dressed as wizards, working together to brew different things together from a pantry (code, text, figures, etc.) in a cauldron labeled “R Markdown”. The monster wizard at the cauldron is reading a recipe that includes steps “1. Add text. 2. Add code. 3. Knit. 4. (magic) 5. Celebrate perceived wizardry.” The R Markdown potion then travels through a tube, and is converted to markdown by a monster on a broom with a magic wand, and eventually converted to an output by pandoc. Stylized text (in a font similar to Harry Potter) reads 'R Markdown. Text. Code. Output. Get it together, people.'" width="800"></p>
 </figure>
 </div>
 
@@ -361,7 +369,7 @@ Mine Çetinkaya-Rundel <br> Duke University
 <h2>Literate programming - Websites</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/website.png" class="quarto-figure quarto-figure-center" width="800"></p>
+<p><img data-src="img/website.png" class="quarto-figure quarto-figure-center" alt="Screenshot of course website for Stats 6 - Introduction to Data Science that shows the course logo with the URL instodata.science and a brief description of the course." width="800"></p>
 </figure>
 </div>
 </section>
@@ -369,7 +377,7 @@ Mine Çetinkaya-Rundel <br> Duke University
 <h2>Literate programming - Slides</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/slides.png" class="quarto-figure quarto-figure-center" width="800"></p>
+<p><img data-src="img/slides.png" class="quarto-figure quarto-figure-center" alt="Screenshot of Lecture 1 slides on a deep dive into ggplot2 layers from STA 313 - Spring 2024 by Mine Çetinkaya-Rundel at Duke University." width="800"></p>
 </figure>
 </div>
 </section>
@@ -377,15 +385,16 @@ Mine Çetinkaya-Rundel <br> Duke University
 <h2>Literate programming - Exams</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/exam.png" class="quarto-figure quarto-figure-center" width="800"></p>
+<p><img data-src="img/exam.png" class="quarto-figure quarto-figure-center" alt="Screenshot of a PDF containing final exam policies for Stats 67 at UCI." width="800"></p>
 </figure>
 </div>
 </section>
 <section id="raw-data---real-data" class="slide level2">
 <h2>Raw data - Real data</h2>
+<p><br></p>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/raw-data.png" class="quarto-figure quarto-figure-center" width="900"></p>
+<p><img data-src="img/raw-data.png" class="quarto-figure quarto-figure-center" alt="A diagram for going from raw data to cleaning script to clean data." width="900"></p>
 </figure>
 </div>
 </section>
@@ -437,22 +446,21 @@ Mine Çetinkaya-Rundel <br> Duke University
 <span id="cb11-13"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- quiz-11a-simple-linreg.qmd</span>
 <span id="cb11-14"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- quiz-11b-indicator-var.qmd</span>
 <span id="cb11-15"><a href="" aria-hidden="true" tabindex="-1"></a>    |-- quiz-11c-assumptions.qmd</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<!--
-Delete if not used:
-![](img/file-organization.jpg){fig-align="center"}
--->
 </section>
 <section id="file-organization-1" class="slide level2">
 <h2>File organization</h2>
+<p><br></p>
+<div class="font50">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href=""></a><span class="fu">read.csv</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"data"</span>,<span class="st">"bike-rental.csv"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </section>
 <section id="version-control" class="slide level2">
 <h2>Version control</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/version-control.png" class="quarto-figure quarto-figure-center" width="900"></p>
+<p><img data-src="img/version-control.png" class="quarto-figure quarto-figure-center" alt="A quote by Jenny Bryan that reads 'Collaboration is the most compelling reason to manage a project with Git and GitHub. My definition of collaboration includes hands-on participation by multiple people, including your past and future self, as well as an asymmetric model, in which some people are active makers and others only read or review.' and illustrations of six colorful monsters by Allison Horst." width="900"></p>
 </figure>
 </div>
 
@@ -472,7 +480,7 @@ Delete if not used:
 <h2>Version control</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/github-classroom.jpg" class="quarto-figure quarto-figure-center" width="900"></p>
+<p><img data-src="img/github-classroom.jpg" class="quarto-figure quarto-figure-center" alt="A blackboard with the GitHub octocat logo and GitHub Classroom logo with the text 'Your course assignments on GitHub'." width="900"></p>
 </figure>
 </div>
 </section></section>
@@ -577,15 +585,20 @@ Delete if not used:
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href=""></a>modelweight<span class="ot">&lt;-</span><span class="fu">lm</span>(mpg<span class="sc">~</span>wt,<span class="at">data=</span><span class="fu">subset</span>(mtcars,am<span class="sc">==</span><span class="dv">1</span>),<span class="at">na.action=</span>na.exclude)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="fragment">
 <p><br></p>
-<p>or</p>
-<p><br> <strong>Option 2:</strong></p>
+<p>or <strong>Option 2:</strong></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href=""></a>model_weight <span class="ot">&lt;-</span> <span class="fu">lm</span>(</span>
 <span id="cb17-2"><a href=""></a>  mpg ˜ wt,</span>
 <span id="cb17-3"><a href=""></a>  <span class="at">data =</span> <span class="fu">subset</span>(mtcars, am <span class="sc">==</span> <span class="dv">1</span>),</span>
 <span id="cb17-4"><a href=""></a>  <span class="at">na.action =</span> na.exclude</span>
 <span id="cb17-5"><a href=""></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="fragment">
+<p><br></p>
+<p>or <strong>Option 3:</strong> Who cares? It doesn’t matter!</p>
 </div>
 </section>
 <section id="style-guide" class="slide level2">
@@ -640,7 +653,8 @@ Delete if not used:
 <li><strong>CC BY 4.0</strong>: Allows both commercial and non-commercial use (e.g., corporate training, MOOCs).</li>
 </ul>
 </div>
-</div><div class="column fragment">
+</div><div class="column">
+<div class="fragment">
 <p><strong>Software:</strong></p>
 <div>
 <ul>
@@ -648,7 +662,7 @@ Delete if not used:
 <li><strong>General Public License (GPL)</strong> etc.</li>
 </ul>
 </div>
-</div></div>
+</div>
 <div class="fragment">
 <div class="callout callout-tip callout-style-simple">
 <div class="callout-body">
@@ -661,6 +675,7 @@ Delete if not used:
 </div>
 </div>
 </div>
+</div></div>
 </section></section>
 <section>
 <section id="concluding-remarks" class="title-slide slide level1 center">
@@ -677,7 +692,7 @@ Delete if not used:
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/example-sta199-f24-frontend.png" class="quarto-figure quarto-figure-center" width="800"></p>
+<p><img data-src="img/example-sta199-f24-frontend.png" class="quarto-figure quarto-figure-center" alt="Course website for STA 199 - Fall 2024 Introduction to Data Science and Statistical Thinking that shows a navigation bar on the left with the course hex logo and the schedule of the course on the right." width="800"></p>
 </figure>
 </div>
 </section>
@@ -686,7 +701,7 @@ Delete if not used:
 <div class="font50">
 <p><a href="https://github.com/sta199-f24/sta199-f24.github.io">github.com/sta199-f24/sta199-f24.github.io</a></p>
 </div>
-<p><img data-src="img/example-sta199-f24-backend-repo.png" class="quarto-figure quarto-figure-center" width="500"> <img data-src="img/example-sta199-f24-backend-readme.png" class="quarto-figure quarto-figure-center" width="500"></p>
+<p><img data-src="img/example-sta199-f24-backend-repo.png" class="quarto-figure quarto-figure-center" alt="GitHub repo for the course website for STA 199 - Fall 2024." width="500"> <img data-src="img/example-sta199-f24-backend-readme.png" class="quarto-figure quarto-figure-center" alt="README in the GitHub repo for the course website for STA 199 - Fall 2024 that shows the color choices, instructions for rendering and publishing." width="500"></p>
 </section>
 <section id="see-also" class="slide level2">
 <h2>See also</h2>
