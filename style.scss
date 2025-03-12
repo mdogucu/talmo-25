@@ -58,3 +58,7 @@ $link-hover-color: darken($link-color, 20%);
   display: block;
   text-align: center;
 }
+
+.reveal .slide-number > a[href*='title-slide'] {
+  display: none;
+}
