@@ -116,11 +116,11 @@ Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social)
 
 ## Literate programming - Websites
 
-![](img/website.png){fig-align="center" alt="Screenshot of course website for Stats 6 - Introduction to Data Science that shows the course logo with the URL instodata.science and a brief description of the course." width=800}
+![](img/website.png){fig-align="center" alt="Screenshot of course website for Stats 6 - Introduction to Data Science that shows the course logo with the URL instodata.science and a brief description of the course." width=750}
 
 ## Literate programming - Slides
 
-![](img/slides.png){fig-align="center" alt="Screenshot of Lecture 1 slides on a deep dive into ggplot2 layers from STA 313 - Spring 2024 by Mine Çetinkaya-Rundel at Duke University." width=800}
+![](img/slides.png){fig-align="center" alt="Screenshot of Lecture 1 slides on a deep dive into ggplot2 layers from STA 313 - Spring 2024 by Mine Çetinkaya-Rundel at Duke University." width=750}
 
 ## Literate programming - Exams
 
