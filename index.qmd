@@ -460,11 +460,11 @@ Educators should familiarize themselves with licensing options before making a c
 ![](img/example-sta199-f24-backend-repo.png){fig-align="center" alt="GitHub repo for the course website for STA 199 - Fall 2024." width=500}
 ![](img/example-sta199-f24-backend-readme.png){fig-align="center" alt="README in the GitHub repo for the course website for STA 199 - Fall 2024 that shows the color choices, instructions for rendering and publishing." width=500}
 
-## Challenges and benefits
+## Challenges and benefits {.smaller}
 
 - Rarely, if ever, an investment in reproducibility doesn't pay off!
 
-- Adopting the complete framework likely requires learning new tools and keeping your (and your co-instructors' + TAs') knowledge of tools and ecosystems up to date, which is no small feat!
+- Adopting the full framework likely requires learning new tools and keeping your (and your co-instructors' + TAs') knowledge of tools and ecosystems up to date, which is no small feat!
 
 - Openness brings 
   - free learning materials to your discipline and community,
