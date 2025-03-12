@@ -62,3 +62,7 @@ $link-hover-color: darken($link-color, 20%);
 .reveal .slide-number > a[href*='title-slide'] {
   display: none;
 }
+
+.reveal .callout.callout-tip.callout-style-simple {
+  background-color: lighten($body-bg, 10%);
+}

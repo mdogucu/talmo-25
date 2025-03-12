@@ -466,7 +466,11 @@ Educators should familiarize themselves with licensing options before making a c
 
 - Adopting the complete framework likely requires learning new tools and keeping your (and your co-instructors' + TAs') knowledge of tools and ecosystems up to date, which is no small feat!
 
-- Openness brings free learning materials to your discipline and community as well as generates opportunities for collaboration and recognition and can serve as a role model for your students.
+- Openness brings 
+  - free learning materials to your discipline and community,
+  - invites kudos from colleagues using your materials,
+  - generates opportunities for collaboration and recognition, and 
+  - can serve as a role model for your students.
 
 ## See also
 
