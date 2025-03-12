@@ -132,6 +132,10 @@ Artwork by [@allison_horst](https://bsky.app/profile/allisonhorst.bsky.social)
 
 ![](img/raw-data.png){fig-align="center" alt="A diagram for going from raw data to cleaning script to clean data." width=900}
 
+::: {.callout-tip appearance="simple"}
+Keep data in the raw form you find or collect it, and record any steps to process it to prepare it for teaching 
+:::
+
 ## Raw data - Simulated data
 
 ```{r}
@@ -149,6 +153,9 @@ sample(1:100, size = 3, replace = FALSE)
 
 ## File organization
 
+:::: {.columns}
+
+::: {.column width="50%"}
 <br>
 
 ```{.markdown code-line-numbers="false"}
@@ -168,6 +175,32 @@ week-11-simple-linreg
     |-- quiz-11b-indicator-var.qmd
     |-- quiz-11c-assumptions.qmd
 ```
+:::
+
+::: {.column width="50%"}
+
+<br>
+
+::: {.callout-tip appearance="simple"}
+Adopt a project-based workflow to avoid changing file paths.
+:::
+
+::: {.nonincremental}
+
+::: {.callout-tip appearance="simple"}
+The file names should 
+
+- be machine-readable
+
+- be human-readable
+
+- play well with default-ordering
+:::
+
+:::
+
+:::
+::::
 
 ## File organization
 
@@ -179,6 +212,12 @@ week-11-simple-linreg
 #| echo: true
 read.csv(here::here("data","bike-rental.csv"))
 ```
+:::
+
+<br>
+
+::: {.callout-tip appearance="simple"}
+Use `here::here()` to set the file path to the root of the project.
 :::
 
 ## Version control
